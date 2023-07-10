@@ -1,6 +1,6 @@
 <template>
   <div  style="width: 100%; height: 600px;">
-    <h2>Ubicación Satelital</h2>
+    <h2>Ubicación</h2>
     <l-map :zoom="zoom" :center="center">
       <l-tile-layer :url="url"></l-tile-layer>
       <l-marker v-for="coordinate in coordinates" :key="coordinate.latitude" :lat-lng="[coordinate.latitude, coordinate.longitude]"
